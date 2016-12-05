@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Security System</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Home Security System</h1>
+<p>{{r}}</p>
+<br>
+<h3>Camera options</h3>
+<form action="" method="post">{% csrf_token %}
+<input type="submit" name="photos" value="photos" />
+<input type="submit" name="stream" value="stream" />
+</form>
+
+</body>
+</html>
