@@ -10,7 +10,7 @@ import datetime
 import sqlite3
 import spidev
 import dropbox
-client = dropbox.client.DropboxClient('Dropbox_token_key')
+client = dropbox.client.DropboxClient('<Dropbox_token_key>')
 
 con = sqlite3.connect('db.sqlite3')
 cur = con.cursor()
@@ -43,10 +43,10 @@ def get_ip_address(ifname):
     )[20:24])
 
 def send_email(subject, body):
-    smtpUser = 'email_address'
-    smtpPass = 'email_password'
+    smtpUser = '<email_address>'
+    smtpPass = '<email_password>'
 
-    toAdd = 'email_to_receive_message'
+    toAdd = '<email_to_receive_message>'
     fromAdd = smtpUser
     header = 'To: ' + toAdd + "\n" + 'From: ' + fromAdd + '\n' + 'Subject: ' + subject
 
